@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial scale=1.0" />
+    <title>WAR Landing Page</title>
+    <link href="style.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/7313f96015.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <a href="index.html"><i class="fab fa-connectdevelop"></i></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fas fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#meet">Meet Devs</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <i class="fas fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <div class="text-box">
+        <div class="logo">
+          <div class="steel-container">
+            <div class="wood-container">
+              <!-- <img class="blood-image"src="https://th.bing.com/th/id/OIP.79cSKaHAkkPWpdU3ImRfaAHaEM?pid=ImgDet&rs=1"/> -->
+              <h1 class="text">WAR</h1>
+            </div>
+          </div>
+        </div>
+        <a class="hero-btn" href="https://war-card-game-ten.vercel.app/home"
+          >PLAY NOW! <i class="fas fa-gamepad"></i
+        ></a>
+      </div>
+    </section>
+
+    <!-- About Me -->
+    <section class="about-me" id="about">
+      <h1>War Card Game</h1>
+      <div class="about-text">
+        <div class="about-item">
+          <div class="about-single">
+            <p>
+              War is a classic <span class="highlight">two-player card game</span> played with the standard
+              <span class="highlight">52-card deck</span>. Our product retains everything you love about the card game while
+              putting our unique twist on it.
+            </p>
+            <p>
+               Once you load the game in your browser, you
+              will be sent to the Start menu. Here, you can read thorough <span class="highlight">instructions</span> on how to
+              play, <span class="highlight">play the game</span>, or check out more information about the <span class="highlight">developers</span>.
+            </p>
+            <p>
+            Once you <span class="highlight">click start</span>, the dealer will shuffle the 52-card deck and split it down the
+              middle (<span class="highlight">26 for you</span> and <span class="highlight">26 for your opponent</span>). Now, all you have to do is click <span class="highlight">"DEAL"</span>
+              to <span class="highlight">play one card</span> for you and one card for your opponent.
+            </p>
+          </div>
+          <div class="about-video about-double">
+            <video height="100%" width="100%" controls autoplay>
+              <source src="videos/starting-a-game.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+        <div class="about-item">
+          <div class="about-double">
+            <video height="100%" width="100%" controls autoplay>
+              <source src="videos/winning-a-game.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="about-video about-single rules-text">
+            <p>The <span class="highlight">rules</span> are simple:</p>
+            <p>
+              1. <span class="highlight">Only VALUE</span> matters (Ace is the <span class="highlight">lowest</span> and King is the <span class="highlight">highest</span>)
+            </p>
+            <p>2. <span class="highlight">Highest card wins</span></p>
+            <p>3. If bother player's value is the SAME, <span class="highlight">WAR</span> is Triggered</p>
+            <p>4. In <span class="highlight">WAR</span>, both players <span class="highlight">play 4 cards</span> (3 face down, <span class="highlight">1 face UP</span>)</p>
+            <p>5. <span class="highlight">Highest</span> card wins and winner <span class="highlight">takes all cards</span> on the table</p>
+            <p>6. The <span class="highlight">first player</span> to have more than <span class="highlight">26 cards</span> wins the game!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects" id="meet">
+      <h1>Meet The Developers</h1>
+      <div class="row">
+        <div class="projects-col">
+          <img src="images/priscilla.jpeg" />
+          <div class="layer">
+            <a
+              href="https://www.linkedin.com/in/priscillakung/"
+              rel="noopener noreferrer"
+              target="_blank"
+              ><h3>Priscilla Kung</h3></a
+            >
+          </div>
+        </div>
+        <div class="projects-col">
+          <img src="images/teddy.jpeg" />
+          <div class="layer">
+            <a
+              href="https://www.linkedin.com/in/theodore-jones88/"
+              rel="noopener noreferrer"
+              target="_blank"
+              ><h3>Theodore Jones</h3></a
+            >
+          </div>
+        </div>
+        <div class="projects-col">
+          <img src="images/travis.jpeg" />
+          <div class="layer">
+            <a
+              href="https://www.linkedin.com/in/travis-cariaga/"
+              rel="noopener noreferrer"
+              target="_blank"
+              ><h3>Travis Cariaga</h3></a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+      <h1>Contact</h1>
+      <div class="container">
+        <form
+          class="form"
+          action="https://formspree.io/f/mzbkqnyz"
+          method="post"
+        >
+          <div class="form-control">
+            <label for="user-name">Name</label
+            ><input
+              id="user-name"
+              name="name"
+              type="text"
+              placeholder="Barack Obama"
+            />
+            <label for="user-email">Email</label
+            ><input
+              id="user-email"
+              type="text"
+              name="email"
+              placeholder="barackobama@gmail.com"
+            />
+            <label for="user-message">Message</label
+            ><input
+              id="user-message"
+              name="message"
+              type="text"
+              class="textarea"
+              placeholder="Say something . . ."
+            />
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="icons">
+        <a
+          href="https://www.linkedin.com/in/travis-cariaga/"
+          rel="noopener noreferrer"
+          target="_blank"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a href="mailto:trcariaga@utexas.edu"
+          ><i class="fas fa-envelope"></i
+        ></a>
+        <a
+          href="https://github.com/FoolyTD"
+          rel="noopener noreferrer"
+          target="_blank"
+          ><i class="fab fa-github-square"></i
+        ></a>
+      </div>
+    </section>
+
+    <!-- Javascript for toggle menu -->
+    <script>
+      const navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "500px";
+      }
+    </script>
+  </body>
+</html>
